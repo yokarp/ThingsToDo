@@ -11,6 +11,7 @@ export class DeseosService {
   constructor() {
 
     this.cargarStorage();
+    
     /*
     const lista1 = new Lista('Recolectar piedras del infinito');
     const lista2 = new Lista('Héroes a desaparecer');
@@ -28,9 +29,12 @@ export class DeseosService {
     return nuevaLista.id;
    }
 
-   obtenerLista(){
-     
-   }
+   obtenerLista( id:string | number){
+
+    id = Number(id);
+    return this.listas.find( listaData => listaData.id === id );
+   
+  }
 
    guardarStorage(){
     

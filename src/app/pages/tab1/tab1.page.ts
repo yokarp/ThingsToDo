@@ -18,7 +18,7 @@ export class Tab1Page {
 
   //Promesa
   async agregarLista(){
-    //this.router.navigateByUrl('/tabs/tab1/agregar');
+  //this.router.navigateByUrl('/tabs/tab1/agregar');
     
     const alert = await this.alertCtrl.create({
       header: 'Nueva Lista',
