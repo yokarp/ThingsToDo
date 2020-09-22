@@ -7,7 +7,7 @@ import { Lista } from '../models/lista.model';
 })
 export class FiltroCompletadoPipe implements PipeTransform {
 
-  transform( listas:Lista[], completada: boolean = true ):Lista[] {
+  transform( listas:Lista[], completada: boolean = true ): Lista[] {
 
     return listas.filter( lista => lista.terminada === completada );
 
